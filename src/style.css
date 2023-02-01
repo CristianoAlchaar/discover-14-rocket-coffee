@@ -1,0 +1,106 @@
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: var(--background) no-repeat;
+    margin: 0 auto;
+    color: var(--title);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header#dont-know-what-to-watch{
+    margin-top: 126px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header#dont-know-what-to-watch i img{
+    width: 5.3rem;
+    height: 4.1rem;
+}
+
+div#find_movie{
+    text-align: center;
+}
+
+div#find_movie p{
+    max-width: 30rem;
+}
+
+div#find_movie button#find-button{
+    width: 11.3125rem;
+    height: 3.3rem;
+    margin: 0 auto;
+    background: var(--bg-button);
+    color: #000000;
+    font-weight: bold;
+
+    border: 2px solid #1A1A1A;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    transition: filter 0.5s;
+}
+
+div#find_movie button#find-button:hover{
+    filter: brightness(0.8);
+}
+
+button#find-button img{
+    width: 2.25rem;
+    height: 1.625rem;
+}
+
+div#movie_info{
+    width: 70%;
+    height: auto;
+    display: none;
+
+    margin-bottom: 10px;
+}
+
+div#movie_info img#movie-poster{
+    width: 10.6875rem;
+    height: 15.235rem;
+}
+
+div#movie_info div#title-and-overview-container{
+    margin-left: 20px;
+}
+
+div#movie_info p#movie-overview{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 780px){
+    div#movie_info{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#movie_info div#title-and-overview-container{
+        margin-left: 0px;
+    }
+
+    header#dont-know-what-to-watch{
+        margin-top: 30px;
+    }
+}

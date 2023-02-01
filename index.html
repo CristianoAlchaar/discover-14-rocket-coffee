@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="shortcut icon" href="./assets/favico/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./src/script.js"></script>
+  
+  <title>Rocketflix</title>
+</head>
+
+<body>
+  <header id="dont-know-what-to-watch">
+    <i>
+      <picture>
+        <source srcset="assets\favico\android-chrome-192x192.png" media="(max-width: 375px)"/>
+        <source srcset="assets\favico\android-chrome-512x512.png"/>
+        <img src="assets\favico\android-chrome-512x512.png" alt="Icone da Rocketflix">
+      </picture>
+    </i> 
+    <h1>Não sabe o que assistir?</h1>     
+  </header>
+  <div id="movie_info">
+    <img id="movie-poster">
+    <div id="title-and-overview-container">
+      <h1 id="movie-title"></h1>
+      <p id="movie-overview"></p>
+    </div>
+  </div>
+
+  <div id="find_movie">
+    <button type="button" id="find-button"><img src="assets\favico\apple-touch-icon.png">Encontrar Filme</button>      
+    <p>Clique em "Encontrar filme" que traremos informações
+      de algum filme para você assistir hoje. </p>
+  </div>
+</body>
+
+</html>
