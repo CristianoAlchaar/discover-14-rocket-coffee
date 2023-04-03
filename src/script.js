@@ -15,6 +15,8 @@ const movieContainer = document.getElementById('movie_info');
 let isGettingError = false;
 
 async function getPopularMovies(){
+  console.log(window)
+  console.log('key' + key);
   const popularListUrl = url + '/popular?api_key=' + key + "&" + language;
   let popularMovies = []
   await axios.get(popularListUrl).then(response => {
